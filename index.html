@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>погода</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <div class="input-group">
+                <div class="input-row">
+                    <label for="latitude" class="coordinate-label">Широта</label>
+                    <input type="text" id="latitude" class="coordinate-input">
+                </div>
+                <div class="input-row">
+                    <label for="longitude" class="coordinate-label">Долгота</label>
+                    <input type="text" id="longitude" class="coordinate-input">
+                </div>
+            </div>
+            <button id="show-weather" class="weather-button">Показать погоду</button>
+            <div id="error-message" class="error"></div>
+        </div>
+        
+        <div class="widgets-container" id="widgets-container">
+        </div>
+    </div>
+
+    <script src="widget.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

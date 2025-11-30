@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Inter', Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.coordinate-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    width: 160px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.coordinate-input {
+    width: 405px;
+    height: 49px;
+    border: 2px solid #000000;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.weather-button {
+    width: 617px;
+    height: 91px;
+    background-color: #355FCA;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.widgets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.weather-widget {
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    border: 2px solid #000000;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.coordinates {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+.weather-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.weather-info {
+    margin-top: 15px;
+}
+
+.weather-info p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+.weather-info strong {
+    color: #000000;
+}
+
+.map-container {
+    margin-top: 15px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.error {
+    color: #ff0000;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
